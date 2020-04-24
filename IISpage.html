@@ -1,0 +1,254 @@
+  <!DOCTYPE html>
+  <html lang="pl-PL">
+    <head>
+      
+      <meta charset="UTF-8">
+
+      <title>IIS</title>
+
+       <meta name="description" content="Instytut Informatyki Stosowanej">
+       <meta name="keywords" content="Instytut Informatyki Stosowanej, Politechnika Łódzka">
+       <meta name="author" content="Oktawian Mańkowski">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link rel="stylesheet" href="css/style.css" type='text/css'>      
+      <link href="https://fonts.googleapis.com/css?family=Gruppo&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>         
+
+    </head>
+
+    <body onload="timeCounter()"> 
+
+      <div id="container">
+        <div id="header">        
+          <div class="row">
+
+            <div class="col s2 m2 l2">
+              <div id="iisArea">
+                <a href="IISPage.html"><img src="images/Logotypes/IISlogo.svg" alt="imageToDisplay" style=" width: 23%; min-width: 40px; margin-top: 30px;"></a>
+              </div>             
+            </div>    
+
+            <div class="col s10 m10 l10">            
+              <a href="https://www.p.lodz.pl/pl"><img src="images/Logotypes/logoPolitechnikaPl.svg" alt="imageToDisplay" style=" margin-left: 10%; width: 15%; min-width: 230px; position: absolute;"></a>
+              <a href="http://www.weeia.p.lodz.pl/"><img src="images/Logotypes/WEEIAlogo.svg" alt="imageToDisplay" style=" margin-left: 80%; width: 8%; min-width: 100px;  margin-top: 20px;"></a>        
+            </div>
+
+          </div> 
+        </div>
+   
+        <div class="row">        
+           <div class="col s2 l2" style="background-color: rgb(139, 0, 2); height: 60px;"> 
+            <nav class="z-depth-0">            
+              <div class="nav-wrapper">              
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>             
+              </div>
+            </nav>
+          </div>
+
+          <div class="col s10 l10">
+            <nav style="background-color: rgb(139, 0, 2); height: 60px;">          
+              <ul class="right" style="border-style: none;">
+                <li><a href="#aboutUs"><h5>EN</h5></a></li>
+                <li><a href="#acheavments"><h5>Mapa strony</h5></a></li>                        
+              </ul>           
+            </nav>  
+          </div>
+        </div>     
+
+        <div class="row">
+          <ul class="sidenav" id="mobile-demo">            
+            
+              <li><a href="#"><div class="blackFontH5">O instytucie</div></a></li>
+              <li><a href="#"><div class="blackFontH5">Aktualności</div></a></li>
+              <li><a href="#"><div class="blackFontH5">Konferencje</div></a></li>  
+
+              <li><div class="divider"></div></li>
+            
+              <li><a href="sass.html"><div class="blackFontH5">Studenci</div></a></li>
+              <li><a href="badges.html"><div class="blackFontH5">Plany zajęć</div></a></li>
+              <li><a href="collapsible.html"><div class="blackFontH5">Specjalizacje</div></a></li> 
+
+              <li><div class="divider"></div></li>
+
+              <li><a href="sass.html"><div class="blackFontH5">Kadra</div></a></li>
+              <li><a href="badges.html"><div class="blackFontH5">Godziny przyjęć</div></a></li>                                           
+          </ul>
+
+          <div class="col s0 l2" style="padding: 0px; background-color: lightgrey; height: 1050px;">            
+            <ul class="left hide-on-med-and-down collapsible">
+              <li>
+                  <div class="collapsible-header"><a class="waves-effect" href="#"><img src="images/Icons/school.svg" alt="imageToDisplay"></a></div>
+                  <div class="collapsible-body"><a href="https://www.kis.p.lodz.pl/history.html"><h6><span>Kronika Instytutu</span></h6></a></div>
+                  <div class="collapsible-body"><a href="https://www.kis.p.lodz.pl/labs.html"><h6><span>Laboratoria</span></h6></a></div>
+                  <div class="collapsible-body"><a href="https://www.kis.p.lodz.pl/legalsoft.html"><h6><span>Oprogramowanie</span></h6></a></div>
+                  <div class="collapsible-body"><a href="https://www.kis.p.lodz.pl/history.html"><h6><span>Urządzenia specjalstyczne</span></h6></a></div>
+                  <div class="collapsible-body"><a href="https://www.kis.p.lodz.pl/history.html"><h6><span>Współpraca</span></h6></a></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><a class="waves-effect" href="#"><img src="images/Icons/news.svg" alt="imageToDisplay"></a></div>
+                  <div class="collapsible-body"><a href="https://www.kis.p.lodz.pl/warsztaty-dla-technologow-przemyslowych.html"><h6><span>Warsztaty</span></h6></a></div>
+                  <div class="collapsible-body"><a href="https://www.kis.p.lodz.pl/studenckie-kolo-naukowe-main.html"><h6><span>Koła Naukowe</span></h6></a></div>
+                  <div class="collapsible-body"><a href="https://www.kis.p.lodz.pl/wyniki-konkursu-wyzwan-weekendowych.html"><h6><span>Studenckie projekty</span></h6></a></div>
+                  <div class="collapsible-body"><a href="https://www.kis.p.lodz.pl/lego.html"><h6><span>Konkursy</span></h6></a></div>               
+                </li>
+                <li>
+                  <div class="collapsible-header" style="border-bottom: solid; border-width: thin; border-color: grey; width:100%;"><a class="waves-effect" href="https://www.kis.p.lodz.pl/conferences.html?lang=pl"><img src="images/Icons/conference.svg" alt="imageToDisplay"></a></div>               
+                </li>
+            
+                <li>
+                  <div class="collapsible-header"><a class="waves-effect" href="#"><img src="images/Icons/student.svg" alt="imageToDisplay"></a></div>               
+                  <div class="collapsible-body"><a href="https://www.kis.p.lodz.pl/new_program.html"><h6><span>Program studiów</span></h6></a></div>
+                  <div class="collapsible-body"><a href="https://www.kis.p.lodz.pl/prace_dyplomowe.html"><h6><span>>Dyplomanci</span></h6></a></div>
+                  <div class="collapsible-body"><a href="https://www.kis.p.lodz.pl/theses_topics.html"><h6><span>Prace dyplomowe</span></h6></a></div>
+                  <div class="collapsible-body"><a href="http://main.p.lodz.pl"><h6><span>main()</span></h6></a></div>
+                  <div class="collapsible-body"><a href="https://www.kis.p.lodz.pl/odyseja-edukacyjna.html"><h6><span>Odyseja edukacyjna</span></h6></a></div>                
+                </li>
+                <li>
+                  <div class="collapsible-header"><a class="waves-effect" href="#"><img src="images/Icons/calendar.svg" alt="imageToDisplay"></a></div>
+                  <div class="collapsible-body"><a href="http://www.weeia.p.lodz.pl/dla-studentow/plany-zajec/studia-stacjonarne-plany-zajec-dla-kierunkow-weeia/"><h6><span>Studia stacjonarne</span></h6></a></div>
+                  <div class="collapsible-body"><a href="http://www.weeia.p.lodz.pl/dla-studentow/plany-zajec/studia-niestacjonarne-plany-zajec/"><h6><span>Studia niestacjonarne</span></h6></a></div>                
+                </li>
+                <li>
+                  <div class="collapsible-header" style="border-bottom: solid; border-width: thin; border-color: grey; width:100%;"><a class="waves-effect"  href="#"><img src="images/Icons/star.svg" alt="imageToDisplay"></a></div>
+                  <div class="collapsible-body"><a href="https://www.kis.p.lodz.pl/optional_subjects.html"><h6><span>Studia inżynierskie</span></h6></a></div>
+                  <div class="collapsible-body"><a href="https://www.kis.p.lodz.pl/masters_courses.html"><h6><span>Studia magisterskie</span></h6></a></div>              
+                </li>                   
+                
+                <li>
+                  <div class="collapsible-header"><a class="waves-effect" href="https://www.kis.p.lodz.pl/staff.html?lang=p"><img src="images/Icons/staff.svg" alt="imageToDisplay"></a></div>                
+                </li>
+                <li>
+                  <div class="collapsible-header"><a class="waves-effect" href="https://www.kis.p.lodz.pl/godziny_przyjec.html"><img src="images/Icons/clock.svg" alt="imageToDisplay"></a></div>               
+                </li> 
+             
+            </ul> 
+          </div>
+
+          <div class="col s12 l10">
+            <div class="fixed-action-btn">
+              <a class="btn-floating pulse btn-large z-depth-0" >
+                <img src="images/Icons/plus.svg" alt="imageToDisplay">
+              </a>
+              <ul>
+                <li><a class="btn-floating" href="https://www.facebook.com/Politechnika.Lodzka/"><img src="images/Icons/fbLogo.svg" alt="imageToDisplay"></a></li>
+                <li><a class="btn-floating" href="https://weeia.edu.p.lodz.pl"><img src="images/Icons/Wikamp.svg" alt="imageToDisplay"></a></li>
+                <li><a class="btn-floating" href="https://outlook.office365.com/mail/inbox"><img src="images/Icons/post.svg" alt="imageToDisplay"></a></li>
+                <li><a class="btn-floating" href="https://webdziekanat.p.lodz.pl/webdziekanat/glowna.html"><img src="images/Icons/webDziekanat.svg" alt="imageToDisplay"></a></li>
+              </ul>
+            </div>
+
+            <div class="parallax-container" style="height: 1050px; ">                
+              <div class="parallax">              
+                <img src="images/Pictures/BackgroundOk.jpg" alt="imageToDisplay" style="height:1500px;">
+                <div class="contentBox">
+                  <div class="row">
+                    <div class="col s12 push-l4 l8">                  
+                      <div class="textArea">
+                        <h5 style="color: black; line-height: 50px;">
+                          <b>Szanowni Maturzyści, zapraszamy na studia na naszym Wydziale.</b><br>
+                        </h5>
+                        <h6 style="line-height: 40px;">                        
+                            Od roku akademickiego 2017/18 jeszcze więcej godzin programowania.<br>
+                            Zapraszamy Was do nauki w następujących obszarach: <br>
+
+                            - Języki skryptowe<br>
+                            - Internet of Things<br>
+                            - programowanie urządzeń mobilnych<br>
+                            - systemy biznesowe (Java, C#)<br>
+                            - systemy wizji komputerowej<br>
+                            - systemy autonomiczne.<br>
+                        </h6>
+                      </div>                  
+                    </div>
+
+                  <div class="col s12 pull-l8 l4">                  
+                    <div class="toolBox">
+                      <div class="row">
+                        <div class="col s6 l12">  
+
+                        <div class="horizontalBox">
+                          <div id="dayCounterYear">  
+                            <h6>Rozpoczęcie Roku Akademickiego za:</h6>                
+                            <div class="blackFontH5"><div id="toStart"></div></div>
+                          </div>
+                        </div>
+
+                        <div class="horizontalBox" style="margin-top: 5%;">
+                          <div id="dayCounterSesion">  
+                            <h6>Rozpoczęcie zimowej sesji egzaminacyjnej za:</h6>                
+                            <div class="blackFontH5"><div id="toSession"></div></div>
+                          </div>
+                        </div>
+                      </div>
+                       
+                      <div class="col s6 l12"> 
+                        <div class="row">
+                          <div class="col s12 l6">  
+                            <div class="dateDisplayer">  
+                              <h6>Dzień:</h6>                
+                              <div id="day"></div>
+                            </div>
+                          </div>
+
+                          <div class="col s12 l6">
+                            <div class="dateDisplayer" >
+                              <div id="dayDate"></div>
+                              <div id="monthDate"></div>
+                              <div id="yearDate"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>                
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+      <div class="row" style="background-color: rgb(139, 0, 2);height: 5%; padding: 15px;">     
+        <div class="col s12 l4" >
+          <h5>
+            <i class="material-icons" style="font-size: 40px; margin-left: -120px;  ">place</i>
+            90-537 Łódź <br>
+            ul. Stefanowskiego 18/22
+          </h5>
+        </div>
+
+        <div class="col s12 l4">
+          <h5>
+            <i class="material-icons" style="font-size: 40px; margin-left: -70px;">phone</i>
+            tel. (+48) 42 631-27-50 <br>
+            fax (+48) 42 631-27-55
+          </h5>
+        </div>
+
+        <div class="col s12 l4">
+          <a href="mailto:katedra@kis.p.lodz.pl">
+            <h5 style="color: #D0D3D4; font-weight: bold; margin-top: 30px;">
+              <i class="material-icons" style="font-size: 40px; margin-left: -60px; margin-top: -5px;">mail</i>
+              katedra@kis.p.lodz.pl
+            </h5>
+          </a>
+        </div>
+      </div>
+
+
+
+      <!--JavaScript -->            
+        
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="js/functions.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>       
+
+    </body>
+  </html>
+
+  

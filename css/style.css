@@ -1,0 +1,256 @@
+#header{
+	background-color: white;
+	width: 100%;
+	height: 150px;	
+	text-align: right;
+	position: relative;	
+}
+
+#iisArea{
+	background-color: grey;	
+	height: 150px;	
+	text-align: center;		
+
+}
+
+#container{
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+.contentBox{		
+	border-style: solid;
+	border-color: white;
+	border-radius: 15px;	
+	margin: 5%;		
+	background: rgba(255, 255, 255, 0.6);
+	position: relative;		
+	padding: 5%; 
+	
+}
+
+.textArea{
+	padding: 10%;			
+	border-radius: 15px;
+	background: rgba(255, 255, 255);	
+	margin-bottom: 5%;
+}
+
+.toolBox{	
+		
+	background: white;
+	border-style: solid;
+	border-color: rgba(139, 0, 2, 0.5);
+	border-radius: 15px;
+	margin-right: 5%;	
+	margin-left: 5%;
+	position: relative;
+	padding-bottom: 5%;
+	
+}
+
+
+.dateDisplayer{
+
+	border-style: solid;
+	border-radius: 10px;	
+	border-color: lightgrey;	
+	border-width: thin;	
+
+	width: 70%;
+	height: 90px;
+	background-color: white;	
+	text-align: center;	
+	
+	margin-left: 15%;
+	margin-top: 5%;	
+	padding-top: 18px;
+	
+
+
+}
+
+.horizontalBox{
+
+	border-style: solid;
+	border-radius: 10px;	
+	border-color: lightgrey;
+	border-width: thin;	
+
+	width: 90%;
+	height: 90px;
+	background-color: white;
+	text-align: center;	
+
+	margin-left: 5%;
+	margin-top: 5%;
+
+}
+
+.blackFontH5{
+	color: black;	
+	font-family: 'Gruppo', cursive;
+	font-weight: bold;		
+  	font-size: 1.5em;     	
+ 	line-height: 40px;
+ 	
+}
+
+.separator{
+	border-bottom: solid;
+	border-width: thin;
+	border-color: grey;
+	width:100%;
+	height: 1px;
+	
+}
+
+#day{
+	color: black;	
+	font-family: 'Gruppo', cursive;	
+	font-weight: bold;		
+	font-size: 1.2em;
+	line-height: 15px;
+	margin-top: 0px;
+}
+
+#dayDate{
+	color: rgb(139, 0, 2);	
+	font-family: 'Gruppo', cursive;	
+	font-weight: bold;		
+	font-size: 2.0em;
+	line-height: 7px;
+	margin-top: 0px;
+
+}
+
+#monthDate{
+	color: black;	
+	font-family: 'Gruppo', cursive;	
+	font-weight: bold;		
+	font-size: 1.2em;
+	line-height: 15px;
+	margin-top: 10px;
+	
+}
+
+#yearDate{
+	color: black;	
+	font-family: 'Gruppo', cursive;	
+	font-weight: bold;		
+	font-size: 1.2em;
+	line-height: 15px;
+	margin-top: 7px;
+}
+
+a:hover{
+	transform: scale(1.1);	  
+	transition: all .2s ease-in-out;
+	opacity: 0.6;
+}
+
+h3{
+	color: rgb(139, 0, 2);	
+	font-family: 'Gruppo', cursive;
+	font-weight: bold;
+	line-height: 0px;
+	margin-bottom: 30px;
+	margin-top: 0px;
+
+}
+
+h4{
+	color: black;	
+	font-family: 'Gruppo', cursive;
+	text-align: center;
+	margin-top: 0px;
+
+}
+
+h5{
+	color: white;	
+	font-family: 'Gruppo', cursive;
+	text-align: center;	
+		
+}
+
+h6{
+	color: black;	
+	font-family: 'Gruppo', cursive;	
+	font-weight: bold;		
+	line-height: 15px;
+	margin-top: 0px;
+}
+
+i{		
+	position: absolute;	
+	
+}
+
+img{
+	width: 100%;
+}
+
+
+
+
+.row{
+	margin-bottom: 0px;
+	padding: 0px; 
+}
+
+
+.z-depth-0{
+	height: 60px; background-color: rgba(200, 200, 200, 0.6); margin: 0px; padding: 0px; 
+}
+
+
+.row .col.s2{
+  padding: 0;
+}
+
+.row .col.s10{
+  padding: 0;
+}
+
+.row .col.s12{
+  padding: 0;
+  margin-right: 0%;
+ }
+
+.left{
+	position: relative;
+	margin-bottom: 0px;
+	margin-top: 1px;
+}
+
+
+.btn-floating{
+	background-color: lightgrey;	
+	border-radius: 7px;
+	width: 60px;
+	height: 60px;
+}
+
+
+.collapsible-header{
+	background-color: lightgrey;
+	padding-top: 10px;
+	height: 90px;
+
+}
+
+.collapsible-body{
+	background-color: white;
+	padding-top: 10px;
+	height: 50px;
+}
+
+.collapsible{
+	margin-bottom: 0px;
+	margin-top: 0px;
+	background-color: white;
+	padding: 0px;
+}
+
